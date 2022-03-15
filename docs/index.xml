@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Mjcet-Wiki-test</title>
+    <link>https://mjcet.wiki/</link>
+    <description>Recent content on Mjcet-Wiki-test</description>
+    <image>
+      <url>https://mjcet.wiki/papermod-cover.png</url>
+      <link>https://mjcet.wiki/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 15 Mar 2022 22:48:58 +0530</lastBuildDate><atom:link href="https://mjcet.wiki/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Post1</title>
+      <link>https://mjcet.wiki/posts/post1/</link>
+      <pubDate>Tue, 15 Mar 2022 22:48:58 +0530</pubDate>
+      
+      <guid>https://mjcet.wiki/posts/post1/</guid>
+      <description>This is a cool post</description>
+    </item>
+    
+    <item>
+      <title>Home</title>
+      <link>https://mjcet.wiki/home/</link>
+      <pubDate>Tue, 15 Mar 2022 22:24:57 +0530</pubDate>
+      
+      <guid>https://mjcet.wiki/home/</guid>
+      <description>Bonjour humans;</description>
+    </item>
+    
+    <item>
+      <title>Bonjour humans</title>
+      <link>https://mjcet.wiki/about/</link>
+      <pubDate>Tue, 15 Mar 2022 22:20:32 +0530</pubDate>
+      
+      <guid>https://mjcet.wiki/about/</guid>
+      <description>Something cool? maybe?</description>
+    </item>
+    
+  </channel>
+</rss>
