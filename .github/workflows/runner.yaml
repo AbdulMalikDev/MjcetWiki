@@ -1,0 +1,32 @@
+#https://github.com/itspacchu/pacblog/blob/master/.github/workflows/runner.yaml
+on:
+  push:
+    branches:
+      - production
+
+jobs:
+  UpdateServer:
+    runs-on: self-hosted
+
+    steps:
+      - name: stash local changes before 
+        run: cd /home/ubuntu/MjcetWiki && git stash
+
+      - name: pull new changes from github
+        run: cd /home/ubuntu/MjcetWiki/ && git checkout production && git pull origin production
+
+
+  GenerateHtmlFiles:
+    runs-on: self-hosted
+    needs: [UpdateServer]
+    steps:
+      - name: run the updater script
+        run: cd /home/ubuntu/MjcetWiki/ && hugo
+
+  RestartNginx:
+    runs-on: self-hosted
+    needs: GenerateHtmlFiles
+
+    steps:
+      - name: restart nginx server
+        run:  sudo systemctl restart nginx
