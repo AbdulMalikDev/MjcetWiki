@@ -1,5 +1,5 @@
 baseURL: "https://mjcet.wiki"
-title: Mjcet-Wiki-test
+title: MJCETed
 paginate: 5
 theme: PaperMod
 
@@ -28,6 +28,19 @@ languages:
                 - name: College
                   url: college
                   weight: 5
+    
+    urdu:
+        languageName: "اردو"
+        weight: 2
+        menu:
+            main:
+                - name: محفوظ شدہ دستاویزات
+                  url: archives
+                  weight: 5
+                - name: کالج
+                  url: college
+                  weight: 5
+
 
 outputs:
     home:
@@ -38,82 +51,64 @@ outputs:
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     description: "Something"
-    author: mjcet
+    author: mjcet-chad
     # author: ["Me", "You"] # multiple authors
 
-    defaultTheme: auto
-    # disableThemeToggle: true
-    ShowShareButtons: true
+    defaultTheme: dark
+    disableThemeToggle: true
+    ShowShareButtons: false
     ShowReadingTime: true
-    # disableSpecial1stPost: true
     displayFullLangName: true
     ShowPostNavLinks: true
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
     ShowToc: true
-    # comments: false
+    comments: true
     images: ["papermod-cover.png"]
 
     profileMode:
         enabled: false
-        title: B
-        imageUrl: "#"
+        title: 
+        imageUrl: "##"
         imageTitle: my image
-        # imageWidth: 120
-        # imageHeight: 120
         buttons:
-            - name: Archives
-              url: archives
+            - name: Archive
+              url: archive
             - name: Tags
               url: tags
 
     homeInfoParams:
         Title: "Welcome to MJCET wiki"
         Content: >
-            ## MjcetWiki
+            ## MJCET Wikia
+
+            <br>
 
             The MJCET College Guide:
-            A project to create awareness in juniors by sharing our experiences. Students from all colleges are welcome, but content will be focused around MJCET to keep the guide relevant and avoid making it extremely generalized.
-            ![deeznuts](https://cdn.discordapp.com/attachments/853137341493542913/955849464252362834/unknown.png)
-            
+            A project to create awareness in juniors by sharing our experiences. 
+            Students from all colleges are welcome, but content will be focused around MJCET 
+            to keep the guide relevant and avoid making it extremely generalized.
+
+            <br>
+            <br>
+        
+
+            ![nutsdeez](https://imgs.xkcd.com/comics/listening.png)
+
+            <br>
+
+            ![deeznuts](https://media.discordapp.net/attachments/853137341493542913/955857086238044200/unknown.png)
+
+
+
     socialIcons:
         - name: github
           url: "https://github.com/AbdulMalikDev/MjcetWiki"
 
     editPost:
-        URL: "https://github.com/itspacchu/MjcetWiki/content"
+        URL: "https://github.com/AbdulMalikDev/MjcetWiki/content"
         Text: "Suggest Changes" # edit text
         appendFilePath: true # to append file path to Edit link
-
-    # label:
-    #     text: "Home"
-    #     icon: icon.png
-    #     iconHeight: 35
-
-    # analytics:
-    #     google:
-    #         SiteVerificationTag: "XYZabc"
-
-    # assets:
-    #     favicon: "<link / abs url>"
-    #     favicon16x16: "<link / abs url>"
-    #     favicon32x32: "<link / abs url>"
-    #     apple_touch_icon: "<link / abs url>"
-    #     safari_pinned_tab: "<link / abs url>"
-
-    # cover:
-    #     hidden: true # hide everywhere but not in structured data
-    #     hiddenInList: true # hide on list pages and home
-    #     hiddenInSingle: true # hide on single page
-
-    # fuseOpts:
-    #     isCaseSensitive: false
-    #     shouldSort: true
-    #     location: 0
-    #     distance: 1000
-    #     threshold: 0.4
-    #     minMatchCharLength: 0
-    #     keys: ["title", "permalink", "summary", "content"]
 
 taxonomies:
     category: categories
@@ -124,34 +119,19 @@ markup:
     goldmark:
         renderer:
             unsafe: true
-#     highlight:
-#         # anchorLineNos: true
-#         codeFences: true
-#         guessSyntax: true
-#         lineNos: true
-#         # noClasses: false
-#         style: monokai
+    highlight:
+        # anchorLineNos: true
+        codeFences: true
+        guessSyntax: true
+        lineNos: true
+        # noClasses: false
+        style: monokai
 
-privacy:
-    vimeo:
-        disabled: false
-        simple: true
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
 
-    twitter:
-        disabled: false
-        enableDNT: true
-        simple: true
 
-    instagram:
-        disabled: false
-        simple: true
 
-    youtube:
-        disabled: false
-        privacyEnhanced: true
-
-services:
-    instagram:
-        disableInlineCSS: true
-    twitter:
-        disableInlineCSS: true
