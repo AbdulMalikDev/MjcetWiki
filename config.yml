@@ -91,14 +91,19 @@ params:
 
             <br>
             <br>
-        
+            
 
             ![nutsdeez](https://imgs.xkcd.com/comics/listening.png)
 
             <br>
 
             ![deeznuts](https://media.discordapp.net/attachments/853137341493542913/955857086238044200/unknown.png)
-
+            
+            
+            <meta property="og:title" content="MJCET::wiki" /> 
+            <meta property="og:description" content="You wanna know something .. here is something" />
+            <meta property="og:url" content="https://mjcet.wiki" />
+            <meta property="og:image" content="https://media.discordapp.net/attachments/853137341493542913/959113526524411944/unknown.png" />
 
 
     socialIcons:
